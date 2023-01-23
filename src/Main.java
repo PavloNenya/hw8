@@ -15,7 +15,7 @@ import java.util.Scanner;
      * <p>8 - Вивести суму кожного другого елемента мисиву
      *
      */
-
+//comment
 public class Main {
     public static void main(String[] args) {
         //5 1 7 2 76 23 12 543 46 23 3 86 100 54 45

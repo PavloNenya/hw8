@@ -143,9 +143,9 @@ public class Main {
     public static void sortByIncreasing(int[] array) {
         for(int i = 0; i < array.length; i++) {
             for(int j = 0; j < array.length-1; j++) {
-                if(array[i] < array[j]) {
-                    int tmp = array[i];
-                    array[i] = array[j];
+                if(array[j] < array[j+1]) {
+                    int tmp = array[j+1];
+                    array[j+1] = array[j];
                     array[j] = tmp;
                 }
             }
@@ -161,9 +161,9 @@ public class Main {
     public static void sortByDecreasing(int[] array) {
         for(int i = 0; i < array.length; i++) {
             for(int j = 0; j < array.length-1; j++) {
-                if(array[i] > array[j]) {
-                    int tmp = array[i];
-                    array[i] = array[j];
+                if(array[j] > array[j+1]) {
+                    int tmp = array[j+1];
+                    array[j+1] = array[j];
                     array[j] = tmp;
                 }
             }
@@ -247,16 +247,16 @@ public class Main {
         for(int i = 0; i < array.length; i++) {
             for(int j = 0; j < array.length-1; j++) {
                 if(order) {
-                    if(array[i] > array[j]) {
-                        int tmp = array[i];
-                        array[i] = array[j];
+                    if(array[j] > array[j+1]) {
+                        int tmp = array[j+1];
+                        array[j+1] = array[j];
                         array[j] = tmp;
                     }
                 }
                 else {
-                    if(array[i] < array[j]) {
-                        int tmp = array[i];
-                        array[i] = array[j];
+                    if(array[j] < array[j+1]) {
+                        int tmp = array[j+1];
+                        array[j+1] = array[j];
                         array[j] = tmp;
                     }
                 }
